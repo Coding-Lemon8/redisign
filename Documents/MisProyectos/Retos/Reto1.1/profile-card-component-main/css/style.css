@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  color: #6a6f81;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  background: url("/images/bg-pattern-bottom.svg"), url("/images/bg-pattern-top.svg"), #19a2ae;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 10em,-23em,0;
+  background-position-y: 20em, -20em,0;
+}
+
+::-moz-selection {
+  background-color: rgba(204, 255, 101, 0.651);
+  color: black;
+}
+
+::selection {
+  background-color: rgba(204, 255, 101, 0.651);
+  color: black;
+}
+
+body {
+  position: relative;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.bkg-b,
+.bkg-t {
+  position: absolute;
+  z-index: -1;
+}
+
+.bkg-b {
+  bottom: -40em;
+  right: -30em;
+}
+
+.bkg-t {
+  top: -30em;
+  left: -40em;
+}
+
+.main-cont {
+  background-image: url("/images/bg-pattern-card.svg");
+  background-position-y: -0.5em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  min-width: 300px;
+  min-height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 15px;
+  z-index: 0;
+}
+
+.profile-img {
+  margin-top: 3em;
+  background-color: white;
+  border-radius: 50%;
+  border: 5px white solid;
+}
+
+.section-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.name {
+  margin-top: 1em;
+  font-weight: 700;
+  color: #2d3248;
+}
+
+.age {
+  font-weight: 400;
+  color: #6a6f81;
+}
+
+.stats {
+  border-top: 0.3px rgba(25, 162, 174, 0.76) solid;
+  min-width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stats > div {
+  margin: 25px 0 20px 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.big {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2d3248;
+}
+
+.small {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.attribution {
+  margin: 30px 0;
+  background-color: none;
+  color: black;
+  font-size: 13px;
+  text-align: center;
+}
+
+.attribution :hover {
+  color: #69ff05;
+  -webkit-transition: color ease-in 0.5s;
+  transition: color ease-in 0.5s;
+  font-size: 20px;
+  -webkit-transition: font-size 1s ease;
+  transition: font-size 1s ease;
+}
+
+.attribution a {
+  font-size: 13px;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: color ease-in 0.5s;
+  transition: color ease-in 0.5s;
+  -webkit-transition: font-size 1s ease;
+  transition: font-size 1s ease;
+}
+
+@media (min-width: 270px) {
+  .main-cont {
+    background-size: cover;
+    background-position-y: -12em;
+    height: 50px;
+    min-width: 250px;
+  }
+}
+
+@media (min-width: 790px) {
+  html {
+    background-position-x: 20em,-28em,0;
+    background-position-y: 20em, -20em,0;
+  }
+}
+
+@media (min-width: 1020px) {
+  html {
+    background-position-x: 25em,-28em,0;
+    background-position-y: 20em, -40em,0;
+  }
+}
+
+@media (min-width: 1120px) {
+  .main-cont {
+    background-size: contain;
+    min-width: 40%;
+    background-position-y: -4em;
+  }
+  html {
+    background-position-x: 25em,-35em,0;
+    background-position-y: 15em, -40em,0;
+  }
+}
+
+@media (min-width: 1242px) {
+  .main-cont {
+    min-width: 40%;
+    background-position-x: 0.5px;
+    background-position-y: -4em;
+  }
+  html {
+    background-position-x: 25em,-35em,0;
+    background-position-y: 15em, -40em,0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
