@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+	<!-- Title -->
+	<title>Monitor+ API</title>
+
+	<!-- JS Files -->
+	<script src="./Monitor+ API_files/jquery-1.12.3.js.descarga"></script>
+	<script src="./Monitor+ API_files/jquery-3.6.0.min.js.descarga"></script>
+	<script src="./Monitor+ API_files/bootstrap.min.js.descarga"></script>
+	<script src="./Monitor+ API_files/bootstrap-dropdown.js.descarga"></script>
+	<script src="./Monitor+ API_files/bootstrap.min.js(1).descarga"></script>
+	<script src="./Monitor+ API_files/include-html.js.descarga"></script>
+	<script src="./Monitor+ API_files/jquery-migrate-3.0.0.min.js.descarga"></script>
+	<script src="./Monitor+ API_files/jquery-ui.js.descarga"></script>
+	<script src="./Monitor+ API_files/config.js.descarga"></script>
+	<script src="./Monitor+ API_files/authentication.js.descarga"></script>
+	<script src="./Monitor+ API_files/jquery.ihavecookies.min.js.descarga"></script>
+	<script src="./Monitor+ API_files/top-menu.js.descarga"></script>
+	<script src="./Monitor+ API_files/home.js.descarga"></script>
+	<script src="./Monitor+ API_files/messages.js.descarga"></script>
+	<script src="./Monitor+ API_files/common.js.descarga"></script>
+	<script src="./Monitor+ API_files/goto_homepage.js.descarga"></script>
+
+	<!-- CSS Files -->
+	<link href="./Monitor+ API_files/css" rel="stylesheet">
+	<link href="./Monitor+ API_files/css(1)" rel="stylesheet">
+	<link href="./Monitor+ API_files/jquery-ui.css" rel="stylesheet">
+	<link href="./Monitor+ API_files/font-awesome.min.css" rel="stylesheet">
+	<link href="./Monitor+ API_files/bootstrap-navbar.css" rel="stylesheet">
+	<link href="./Monitor+ API_files/main.css" rel="stylesheet">
+	<link href="./Monitor+ API_files/responsive.css" rel="stylesheet">
+	<link href="./Monitor+ API_files/bootstrap-navbar(1).css" rel="stylesheet">
+	<link href="./Monitor+ API_files/general.css" rel="stylesheet">
+	<link rel="stylesheet" href="./Monitor+ API_files/menu.css">
+    <link rel="stylesheet" href="./Monitor+ API_files/footer.css">
+	<link rel="stylesheet" href="./Monitor+ API_files/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="icon" type="image/x-icon" href="https://www.sarus.com/resources/api_favicon.png">
+</head>
+<body>
+    <!-- include-html="menu.html" -->
+    <nav  id="menu_file" class="navbar navbar-default navbar-fixed-top " style="top: 0px;">
+        <!--<script src="/resources/js/top-menu.js"></script>-->
+        <script src="./Monitor+ API_files/home.js.descarga"></script>
+        <link rel="stylesheet" href="./Monitor+ API_files/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+
+        <!-- header area -->
+        <div class="brand-logo">
+            <!--     <img src="/resources/idm-service/resources/images/IDM-logo-400.png" alt=""> -->
+            <img src="./Monitor+ API_files/SARUS-logo-400.png" alt="Sarus Logo">
+
+        </div>
+        <ul class="nav-menu">
+            <div class="close-btn">
+                <span></span>
+                <span></span>
+            </div>
+            <li class="nav-item"><a class="nav-link active" href="https://www.sarus.com/">Home</a></li>
+            <li class="nav-item dropdown-btn dropdown-btn1"><a class="nav-link ">Solutions <i
+                        class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-item">
+                    <li class="nav-item"><a class="nav-link" href="https://www.sarus.com/samples"><img
+                                src="./Monitor+ API_files/analytics.png" alt="">
+                            Market Data Analytics</a></li>
+                    <li class="nav-item "><a class="nav-link" href="https://www.sarus.com/m-api"><img
+                                src="./Monitor+ API_files/R-16.png">
+                            Monitor+ API</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.sarus.com/xlerate"><img
+                                src="./Monitor+ API_files/xlerate20x16.png" alt="">
+                            XLerate for Excel</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown-btn dropdown-btn2"><a class="nav-link ">Documents <i
+                        class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-item">
+                    <li class="nav-item"><a class="nav-link" href="https://www.sarus.com/r-package"><img
+                                src="./Monitor+ API_files/R-24.png" alt="">Using the
+                            'R' Package</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.sarus.com/python-api"><img
+                                src="./Monitor+ API_files/Python16.png" alt="">Using
+                            the Python Package</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.sarus.com/api-docs"><img
+                                src="./Monitor+ API_files/APIDocs16.png" alt="">API
+                            Documentation</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="https://www.sarus.com/contact-us">Contact</a></li>
+            <li class="nav-item register non-login"><a class="nav-link "
+                    href="https://www.sarus.com/registration">Register</a></li>
+            <li class="nav-item login non-login"><a class="nav-link " href="https://www.sarus.com/login">Login</a>
+            </li>
+            <li class="dropdown-btn profile home-menu" style="display: none;"><a class="nav-link"><img
+                        src="./Monitor+ API_files/man.png" alt=""> <span id="login_name"></span> <i
+                        class="fas fa-caret-down"></i> </a>
+                <ul class="dropdown-item">
+                    <li><a href="https://www.sarus.com/profile"><img src="./Monitor+ API_files/MyAccount16.png"
+                                alt=""> My Account</a></li>
+                    <li><a href="https://www.sarus.com/profilemain?tab=favorites"><img
+                                src="./Monitor+ API_files/Favorites16.png" alt=""> My
+                            Favorites</a></li>
+                    <li><a id="logout" href="javascript:void(0)"><img src="./Monitor+ API_files/Logout.png" alt="">
+                            logout</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="bar">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $('.dropdown-btn1').click(function (e) {
+                    e.stopPropagation();
+                    if ($(this).children('.dropdown-item').hasClass('dropdown-item-shown') == true) {
+                        $(this).children('.dropdown-item').removeClass('dropdown-item-shown')
+                    } else ($(this).children('.dropdown-item').addClass('dropdown-item-shown'))
+                    $('.dropdown-btn2').children('.dropdown-item').removeClass('dropdown-item-shown')
+                    $('.dropdown-btn3').children('.dropdown-item').removeClass('dropdown-item-shown')
+
+                });
+                $('.dropdown-btn2').click(function (e) {
+                    e.stopPropagation();
+                    if ($(this).children('.dropdown-item').hasClass('dropdown-item-shown') == true) {
+                        $(this).children('.dropdown-item').removeClass('dropdown-item-shown')
+                    } else ($(this).children('.dropdown-item').addClass('dropdown-item-shown'))
+                    $('.dropdown-btn1').children('.dropdown-item').removeClass('dropdown-item-shown');
+                    $('.dropdown-btn3').children('.dropdown-item').removeClass('dropdown-item-shown');
+                });
+                $('.profile').click(function (e) {
+                    e.stopPropagation();
+                    if ($(this).children('.dropdown-item').hasClass('dropdown-item-shown') == true) {
+                        $(this).children('.dropdown-item').removeClass('dropdown-item-shown')
+                    } else ($(this).children('.dropdown-item').addClass('dropdown-item-shown'))
+                    $('.dropdown-btn1').children('.dropdown-item').removeClass('dropdown-item-shown');
+                    $('.dropdown-btn2').children('.dropdown-item').removeClass('dropdown-item-shown')
+                    $('.dropdown-btn3').children('.dropdown-item').removeClass('dropdown-item-shown');
+                });
+
+
+                $(document).on('click', function (e) {
+                    if ($(e.target).is(".dropdown-btn") == false && $('.dropdown-item').hasClass(
+                        'dropdown-item-shown')) {
+                        console.log("button clicked");
+                        $('.dropdown-item').removeClass('dropdown-item-shown');
+
+                    }
+                });
+
+                $('.navbar .bar').click(function () {
+                    $('.nav-menu').addClass('nav-menu-shown')
+                    if ($('.footer-menu').hasClass('nav-menu-shown')) {
+                        $('.footer-menu').removeClass('nav-menu-shown')
+                    }
+                });
+
+
+                $('.navbar .close-btn').click(function () {
+                    $('.nav-menu').removeClass('nav-menu-shown')
+                });
+
+
+                $(window).resize(function () {
+                    if ($('.nav-menu').hasClass('nav-menu-shown')) {
+                        $('.nav-menu').removeClass('nav-menu-shown')
+                    }
+
+                });
+
+
+                let lastScrollTop = 0;
+                $(window).scroll(function (event) {
+                    let st = $(this).scrollTop();
+
+                    if (st > lastScrollTop && lastScrollTop >= 0) {
+                        $('.navbar').css({
+                            top: '-110px'
+                        });
+                        $('.dropdown-item').removeClass('dropdown-item-shown');
+                        $('.nav-menu').removeClass('nav-menu-shown');
+                        $('.marquee-wrapper').css({
+                            visibility: 'hidden',
+                            opacity: '0'
+
+                        });
+
+                    } else if (st < lastScrollTop) {
+                        $('.navbar').css({
+                            top: '0'
+                        })
+
+                        $('.marquee-wrapper').css({
+                            visibility: 'visible',
+                            opacity: 1
+                        })
+
+                    }
+                    lastScrollTop = st;
+                });
+
+
+            });
+        </script>
+    </nav>
+
+
+    <section class="main-content dis-block clearfix">
+        <div class="top-logo">
+            <div class="monitor">
+                <img src="./Monitor+ API_files/monitor-plus.svg" alt="Monitor-plus" data-bs-toggle="tooltip"
+                    data-bs-placement="right" data-bs-html="true" title="Double click to view the image">
+                <div class="market"><em>Market data made easy</em></div>
+            </div>
+        </div>
+        <div class="info-monitor">
+            <h2 class="big-blue-title">Overview:</h2>
+            <p><strong>Monitor+ </strong>is a Web API that allows easy access to a huge range of market data from
+                cloud data servers that store historical reference data from stock exchanges, commodity exchanges,
+                proprietary market data providers, independent pricing agencies as well as currencies, world indices
+                and more.</p>
+            <p>The Monitor+ API site between the subscriber and the cloud data servers enabling users to request and
+                receive time series market data in standard JSON format.</p>
+            <p>With simple flexible licensing, Monitor+ allows easy integration of market data into new or existing
+                platforms, information systems and trading systems. It is easy to use, extremely powerful and has
+                native access in both Python and "R" to enable data scientists, analysts and developers to use it
+                straight out of the box.</p>
+            <br>
+            <br>
+            <div style="display: flex; justify-content: center; align-items: center">
+                <img src="./Monitor+ API_files/info-monitor-plus.svg" style="width: 625px;" data-bs-toggle="tooltip"
+                    data-bs-placement="right" data-bs-html="true" title="Double click to view the image">
+            </div>
+            <br>
+            <br>
+            <h2 class="big-blue-title">How it works:</h2>
+            <p>A clients subscribes to one or more datasources and receives an API key that gives access to the
+                service.
+                The client sends a HTTP request for data and the server returns the market data in JSON format. It's
+                that simple. <br<<br>With just two HTTP requests you can authenticate with the server and get values
+                    for any number of datasets.</br<<br>
+            </p>
+            <p>The API is well documented with sample code and provides easy access to the metadata (data that
+                describes
+                the datasources and datasets) and values. Custom averages and calculated columns are both supported.
+            </p>
+            <br>
+
+
+            <h2 class="big-blue-title">Why Monitor+?</h2>
+            <p>Monitor+ is a RESTful API that is designed to enable fast and easy access to a vast amount of global
+                reference market data plus the analytic tools to enable fast integration into both new and existing
+                business information and trading systems.
+                Monitor+ makes it easy to build reports, quote pages and create both in-house and commercial
+                analytic solutions.</p>
+
+            <p>As well as offering low cost subscriptions to significantly reduce data costs, we provide flexible
+                and simple licensing to allow internal use of the market data to maximize the customers return on
+                the data. </p>
+
+            <p>We provide subscribers with direct access to "R", Python (in Jupyter notebooks) which enables access
+                to a huge range of readily available analytic functions and reports. Using Monitor+, even the
+                smallest companies can now have the analytic power that was unheard of only a few years ago.
+                Averages, correlations, regressions, seasonality, forecasting, machine learning, MACD, ANOVA, ARIMA,
+                SARIMA and thousands more analytic functions are freely available. We provide code samples to
+                demonstrate just how easily powerful reports can be created. <br>
+                With Monitor+, market data is made easy. </p>
+
+            <p>We provide customers with the powerful “XLerate” for Excel add-in to enable easy access to
+                market data for traders, analysts and front/mid or back office use.
+                XLerate brings the power of Monitor+ to Excel and makes it easy to create both analytic reports and
+                technical analysis charts using a 'point
+                and click' interface. Reports can be shared and refreshed at the click of a button. If you can use
+                Excel, you can use XLerate. Please look to the XLerate page under the "Solutions" menu
+                at the top of the page for more information.</p>
+            <br>
+
+
+            <h2 class="big-blue-title">Benefits:</h2>
+            <p>
+            </p>
+            <ul>
+                <li>
+                    <p><span class="sml-blue-title">Increased Productivity:</span> Get fast access to hundreds of
+                        thousands of historical market data time series. Developers, analysts and data scientists
+                        can be creating analytic reports in literally minutes.</p>
+                </li>
+                <li>
+                    <p><span class="sml-blue-title">Cost Reduction:</span> The Monitor+ service typically costs a
+                        fraction of other market data delivery services. Our flexible licensing can significantly
+                        reduce data costs for subscribers and mkes it cost effective to use the data throughout your
+                        company (subject to any data vendor restrictions)</p>
+                </li>
+                <li>
+                    <p><span class="sml-blue-title">Ease of Use:</span> Monitor+ is designed to be powerful,
+                        flexible and easy to use. It is well documented with sample code. No knowledge of networks,
+                        databases or SQL is needed. With just two HTTP commands you can receive market data that is
+                        ready to use. </p>
+                </li>
+
+                <li>
+                    <p><span class="sml-blue-title">Data Science:</span> We provide native “R” and Python components
+                        to enable companies of any size to have full access to tools to create analytics, machine
+                        learning and forecasting reports. </p>
+                </li>
+                <li>
+                    <p><span class="sml-blue-title">Excel Users:</span> Excel users can access the powerful
+                        "XLerate" for Excel add-in to make market data report generation in Excel a breeze.</p>
+                </li>
+                <li>
+                    <p><span class="sml-blue-title">Market Data:</span> Subscribers can have access to huge volumes
+                        of historical market data for stocks, commodities, currency, indices and from 3rd party data
+                        vendors. </p>
+                </li>
+                <li>
+                    <p><span class="sml-blue-title">Product Development:</span> Use Monitor+ to power your databases
+                        or to create reports, quote pages and in-house software solutions using virtually any
+                        programming language.</p>
+                </li>
+                <li>
+                    <p><span class="sml-blue-title">Proprietary Data:</span> If you require need to market data from
+                        a third party (or have your own proprietary data), we are happy to discuss adding it to the
+                        service. If required, we can supply a private data server to comply with any vendor data
+                        restrictions. </p>
+                </li>
+                <li>
+                    <p><span class="sml-blue-title">User Favorites:</span> We provide and manage a list for user
+                        favorite datasets via our customer web portal. This list is also used in XLerate for dataset
+                        selection and can be fully managed via the API. </p>
+                </li>
+
+
+            </ul>
+            <p></p>
+
+            <br>
+            <h2 class="big-blue-title">Additional API Features:</h2>
+            <p>
+            </p>
+            <p><span class="sml-blue-title">JSON Result Format:</span> The Monitor+ API is ideal for creating
+                multiple web applications and reports as market data can be returned in one of three formats:</p>
+            <ul style="margin-left: 10px; margin-bottom: 10px">
+                <li>Single Date. Ideal for creating "Quote page" style reports that require values for any one date
+                    including optional "Spark Line" and "change" values.</li>
+                <br>
+                <li>Historical TS. Market data is returned as individual time series.
+                </li>
+                <br>
+                <li>Historical RC. Market data is returned in a ”row x column” format to make report creation easy.
+                </li>
+            </ul>
+            <br>
+            <p><span class="sml-blue-title">Integration:</span> The market data is directly accessible in "R" and
+                Python or using our XLerate for Excel add-in. Use XLerate to create, update and share detailed Excel
+                market reports.
+                See the “Products” menu above for detailed information on XLerate for Excel. You can get more
+                information on the “R” , Python packages and the API from the “Documentation” menu at the top of the
+                page.</p>
+
+            <p><span class="sml-blue-title">Averages:</span> The API can return values as daily, weekly, half
+                monthly, monthly, quarterly, half yearly and yearly. Custom averages can be calculated for weeks,
+                half months and months. Custom quarterly, half-yearly and yearly averages can be created using
+                custom month averages.</p>
+            <p></p>
+            <br>
+            <p>As well as choosing date ranges, you can exclude (or move) weekend values, adjust weekend dates in
+                average results and return the first or last date for any average. Fill options permit the filling
+                of missing values with the previous, mid point or interpolated values. If the data vendor supports
+                the feature, details of any published corrected values are also returned in the result.</p>
+            <br>
+
+
+
+            <h2 class="big-blue-title">Documentation:</h2>
+            <p>The full API documentation can be viewed by clicking on the “Documents” menu at the top of the page
+                and selecting the "API Documentation" option. From there you can see the list of the API requests,
+                request parameters, a detailed description of each and code examples of requests and the JSON result
+                format.
+            </p>
+            <br>
+            <br>
+            <!--					<div class="big-blue-title">And finally...</div> <br>  -->
+            <p>If you have any questions about our products or services then please get in touch using the “Contact”
+                menu at the top of the page. </p>
+            <br>
+
+
+        </div>
+    </section>
+
+
+</body>
+</html>

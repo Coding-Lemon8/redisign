@@ -1,0 +1,76 @@
+function setCookie(cname, cvalue, exdays=1) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    let expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+}
+
+$( document ).ready(function()
+{
+    var sessionToken = getParameterByName('SessionToken');
+    console.log(sessionToken);
+    if ( sessionToken !== "" )
+    {
+        window.location.href = 'profilemain?tab=favorites';
+    }
+    else {
+        $('.fixpage').show();
+    }
+    
+    var session = getSession();
+    if ( session !== null && session !== "" && session !== undefined )
+    {
+        call_api_ajax('SessionTokenExpires', 'get', { SessionToken : session }, false, () =>
+        {
+            // Get user data and check if session is not Expired
+            call_api_ajax('GetMyAccountDetails', 'get', { SessionToken: session }, true, ( data ) =>
+            {
+                username = data.Result.Name;
+              $('#login_name').text( username );
+                $('#username').text( username );
+                $('#profile').attr('href', 'profile?tab=MyProfile');
+                $('#favorites').attr('href', 'profilemain?tab=favorites');
+                $('#logout').click( function () {
+                    logout();
+                });
+                $('.non-login').hide();
+                $('.home-menu').show();
+            },
+            () => {
+                return false;
+            }, null, false);
+        },
+        () => {
+                $('.home-menu').hide();
+                $('.non-login').show();
+                return false;
+        }, null, false);
+      
+      /*call_api_ajax('GetMyAccountDetails', 'get', { SessionToken: session }, false, ( data ) =>
+    {
+	    var userName     = data.Result.Name;
+        
+        $('#login_name').text( userName );
+    });*/
+    }
+    else {
+        $('.home-menu').hide();
+        $('.non-login').show();
+    }
+});
